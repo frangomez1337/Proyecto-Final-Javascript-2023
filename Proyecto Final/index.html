@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estación de Servicio - Proyecto Final</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 id="titulo">
+      <b>ESTACIÓN DE SERVICIO <br />CALCULADOR DE RECAUDACIÓN</b>
+    </h1>
+    <div>
+      <p>
+        <b
+          >Ingrese los datos en cada campo según corresponda y luego almacene la
+          información haciendo click en el botón de Carga</b
+        >
+      </p>
+    </div>
+    <div>
+      <label><b>Ingrese el tipo de combustible: </b> <input type="text" id="tipoComb" placeholder="NAFTA o GNC" /></label>
+      <label"><b>Cantidad de litros o m3 cargados: </b><input
+      type="number"
+      id="cantidad"
+      placeholder="Cantidad"
+    /></label>
+    </div>
+    <div>
+      <button id="botonCarga" class="btn btn-primary btn-sm">Cargar</button>
+      <button id="botonBorrado" class="btn btn-danger btn-sm">Borrar datos almacenados</button>
+      <button id="calculador" class="btn btn-success btn-sm">Calcular Recaudación</button>
+    </div>
+    <table class="table table-hover" >
+      <thead>
+        <tr>
+          <th scope="col">ID Carga</th>
+          <th scope="col">Tipo de Combustible</th>
+          <th scope="col">Cantidad (Litros/Metros Cúbicos)</th>
+        </tr>
+      </thead>
+      <tbody id="almacenarCarga">
+
+      </tbody>
+    </table>
+
+    <div id="resultado"></div>
+
+    <!-- Llamado a la ejecución de los scripts -->
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="proyectofinal.js"></script>
+  </body>
+</html>

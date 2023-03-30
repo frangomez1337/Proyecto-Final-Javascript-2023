@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+p {
+  font-size: 20px;
+}
+
+#titulo {
+  text-align: center;
+  background-color: blanchedalmond;
+}
+
+.campoDeCarga {
+  justify-items: center;
+}
